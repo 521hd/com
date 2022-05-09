@@ -1,0 +1,127 @@
+ *{margin: 0;padding: 0}
+    html{width: 100%;height: 100%;background-color: #140d82;}
+    body {width: 100%;display: inline-block;overflow: auto;color: #666;font-size: 14px;font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;overflow-x: hidden;}
+    a {text-decoration: none !important;color: #fff}
+    a:hover {color: #55a1f7;transition: all .3s ease-out}
+    a:link, a:hover, a:visited, a:active, a:focus {text-decoration: none;outline: none !important;blr: expression(this.onFocus=this.blur());transition: all .3s ease;}
+    ul li {list-style: none}
+    ol li {list-style: none}
+    em, i {font-style: normal;}
+    li, ul {margin: 0;padding: 0;list-style: none}
+    h1, h2, h3, h4, h5, h6 {font-family: FZLTXHK, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', SimSun, sans-serif}
+    input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { margin: 0;-webkit-appearance: none}
+    input[type=number] {-moz-appearance: textfield}
+    button, input, select {outline: 0}
+    img {outline: 0;border: 0}
+    table {border-collapse: collapse;border-spacing: 0}
+    /*PC电脑端*/
+    @media screen and (min-width: 768px) {
+        .wrap{
+            width: 4.5rem;
+            height: 8rem;
+            margin: 0.32rem auto;
+            box-shadow: 0 12px 24px 0 rgba(4, 4, 4, 0.2);
+        }
+        .bg_box{
+            background: url(../images/bg.jpg) no-repeat;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-size: cover;
+            text-align: center;
+        }
+        .content{
+            display: block;
+            background-size: 68%;
+            height: 7rem;
+        }
+        .bg_box .btn{
+            display: block;
+            background: url(../images/bnt.png) no-repeat;
+            background-size: 62%;
+            background-position: top;
+            height: 0.93rem;
+            cursor:pointer
+        }
+        .dark{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.67);
+            z-index: 999999;
+            display: none;
+        }
+        .connect{
+            width: 3.2rem;
+            height: 4.8rem;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+    }
+    /*H5移动端端*/
+    @media screen and (max-width: 768px) {
+        body {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            bottom: 0;
+            background: url(../images/bg.jpg) no-repeat #6117dc;
+            background-size: 100%;
+        }
+        .bg_box{
+            text-align: center;
+        }
+        .content{
+            display: block;
+            background-size: 68%;
+            height: 11.6rem;
+        }
+        .bg_box .btn{
+            display: block;
+            background: url(../images/bnt.png) no-repeat;
+            background-size: 66%;
+            background-position: top;
+            height: 0.93rem;
+            cursor:pointer
+        }
+        .dark{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.67);
+            z-index: 999999;
+            display: none;
+        }
+        .connect{
+            width: 5.5rem;
+            height: 8.25rem;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
